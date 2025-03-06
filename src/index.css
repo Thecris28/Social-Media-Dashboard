@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+@custom-variant light (&:where(.light, .light *));
+
+@theme{
+/* Primary */
+--color-LimeGreen: hsl(163, 72%, 41%);
+--color-Bright-Red: hsl(356, 69%, 56%);
+--color-Facebook: hsl(208, 92%, 53%);
+--color-Twitter: hsl(203, 89%, 53%);
+--color-Youtube: hsl(348, 97%, 39%);
+
+/* Dark Theme */
+
+--color-toggle-dark: hsl(210, 78%, 56%);
+--color-toggle-dark-1: hsl(146, 68%, 55%);
+
+/* Light Theme */
+
+--color-Toggle-light: hsl(230, 22%, 74%);
+
+/* Neutral */
+
+/* Dark Theme */
+
+--color-VeryDarkBlueBG: hsl(225, 17%, 14%);
+--color-VeryDarkBlueTopBGPattern: hsl(232, 19%, 15%);
+--color-DarkDesaturatedBlueCardBG: hsl(228, 28%, 20%);
+--color-DesaturatedBlueTextdark: hsl(228, 34%, 66%);
+--color-WhiteText: hsl(0, 0%, 100%);
+--color-Darkcardhover: hsl(228, 26%, 27%);
+
+/* Light Theme */
+
+--color-White-bg: hsl(0, 0%, 100%);
+--color-light-TopBGPattern: hsl(225, 100%, 98%);
+--color-Light-BlueCardBG: hsl(227, 47%, 96%);
+--color-light-text: hsl(228, 12%, 44%);
+--color-DarkTextlight: hsl(230, 17%, 14%);
+
+--font-Inter: Inter, sans-serif;
+--color-Instagram: hsl(37, 97%, 70%);
+--color-Instagram-2: hsl(329, 70%, 58%);
+}
+
+body{
+    @apply font-Inter ;
+    @apply bg-VeryDarkBlueBG;
+    @apply light:bg-White-bg;
+}
