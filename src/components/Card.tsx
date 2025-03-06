@@ -35,7 +35,8 @@ export default function Card({User}:UserProps ) {
     console.log(User.social)
     return (
         <div className="bg-DarkDesaturatedBlueCardBG mt-4 rounded-[8px] mx-5 
-        overflow-hidden text-DesaturatedBlueTextdark hover:bg-Darkcardhover lg:h-[215px] lg:mx-0">
+        overflow-hidden text-DesaturatedBlueTextdark hover:bg-Darkcardhover light:hover:bg-lightCardhover lg:h-[215px] lg:mx-0
+        light:bg-Light-BlueCardBG light:text-light-text">
             <div className={`h-1 ${socialColor}` }></div>
             <section className="mt-4 flex flex-col items-center text-center gap-5 lg:my-7">
                 <div className="flex gap-3 items-center">
@@ -43,7 +44,7 @@ export default function Card({User}:UserProps ) {
                     <p className="text-[0.875rem] font-bold">{username}</p>
                 </div>
                 <div>
-                    <p className="font-black text-5xl text-WhiteText">{followers}</p>
+                    <p className="font-black text-5xl text-WhiteText light:text-DarkTextlight">{followers}</p>
                     <p className="tracking-[4px] font-light text-xs mt-2">{type.toUpperCase()}</p>
                 </div>
                 <div className="flex gap-2 items-center mb-4">

@@ -19,7 +19,7 @@ export const Users: User[] = [
     },
     {
         username: "@realnathanf",
-        followers: 11000,
+        followers: '11K',
         type: "Followers",
         today: 1099,
         social: "Instagram"

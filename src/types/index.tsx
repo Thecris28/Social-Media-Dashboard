@@ -1,7 +1,7 @@
 
 export type User = {
     username: string,
-    followers: number,
+    followers: number | string,
     type: string,
     today: number,
     social: string,

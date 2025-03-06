@@ -18,13 +18,13 @@ export default function CardToday({ metric } : { metric: Metric }) {
     const socialIcon = socialIcons[social.toLowerCase()];
   return (
     <div className="bg-DarkDesaturatedBlueCardBG rounded-[8px] lg:mx-0 mx-5 h-32 flex flex-col justify-evenly 
-    px-6.5 mt-4 hover:bg-Darkcardhover">
+    px-6.5 mt-4 hover:bg-Darkcardhover light:hover:bg-lightCardhover light:bg-Light-BlueCardBG">
         <div className="flex justify-between">
-            <p className="text-DesaturatedBlueTextdark font-bold text-[0.875rem]">{metricName}</p>
+            <p className="text-DesaturatedBlueTextdark font-bold text-[0.875rem] light:text-light-text">{metricName}</p>
             <img src={socialIcon} alt="" />
         </div>
         <div className="flex justify-between items-center">
-            <p className="text-WhiteText font-bold text-4xl">{value}</p>
+            <p className="text-WhiteText font-bold text-4xl light:text-DarkTextlight">{value}</p>
             <div className="flex gap-2 items-center">
             <img src={ Math.sign(percentage) === 1 ? up : down}></img>
             <p className={`text-xs font-bold ${percentage > 0 ? 'text-LimeGreen' : 'text-Bright-Red' }`}>{percentage < 0 ? -percentage: percentage}%</p>
